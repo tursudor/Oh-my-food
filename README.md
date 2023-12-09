@@ -1,2 +1,2 @@
 # Oh-my-food
-open classrooms bootcamp project
+Open Classrooms bootcamp project
