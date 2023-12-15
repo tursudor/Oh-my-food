@@ -66,8 +66,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 20px;
+}
+
+/* How-it-works section */
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+}
+.how-it-works-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.how-it-works-cards__card {
+  width: 332px;
+}
+.how-it-works-cards__card .card-bullet {
+  position: absolute;
+  margin-top: 20px;
+}
+.how-it-works-cards__card .card-bullet span {
+  position: absolute;
+  margin-left: -16px;
+  margin-top: 5px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-weight: 500;
+}
+.how-it-works-cards__card .card-content {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background: #f6f6f6;
+  width: 322.486px;
+  height: 72.379px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
