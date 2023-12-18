@@ -98,7 +98,7 @@ body {
     gap: 25px;
     align-items: center;
     &__card {
-      width: 332px;
+      // width: 332px;
       & .card-bullet {
         position: absolute;
         margin-top: 27px;
@@ -137,19 +137,80 @@ body {
 .restaurants {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background-color: $light-grey;
-  margin-top: 50px;
+  margin: 40px 15px;
+
   & h2 {
-    margin-left: -180px;
+    // margin-right: 180px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
   }
   &-cards {
-    &-row {
-
-    }
     &__card {
-      
+      display: flex;
+      flex-direction: column;
+      width: 346px;
+      height: 251px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      & .card-image {
+        display: flex;
+        justify-content: flex-end;
+      }
+      & img {
+        width: 100%;
+        height: 181px;
+        // flex-shrink: 0;
+        // object-fit: cover;
+      }
+      & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 80px;
+        height: 29px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: $mint;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        color: var(--Green-Font, #008766);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 15px 10px 0 0;
+      }
+      & .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & svg {
+          margin: 20px;
+        }
+      }
+      & .card-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 15px;
+        gap: 3px;
+        align-self: flex-start;
+        & h3 {
+          margin: 0px;
+        }
+      }
+      & p {
+        margin: 0px;
+      }
     }
   }
 }
