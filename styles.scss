@@ -207,9 +207,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        & svg {
-          margin: 20px;
-        }
+      }
+      & .heart-image{
+        object-fit: contain;
+        margin: 30px;
+        // padding: 5px;
+        width: 24px;
+        height: 24px;
       }
       & .card-title {
         display: flex;

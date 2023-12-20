@@ -202,8 +202,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.restaurants-cards__card .card-content svg {
-  margin: 20px;
+.restaurants-cards__card .heart-image {
+  object-fit: contain;
+  margin: 30px;
+  width: 24px;
+  height: 24px;
 }
 .restaurants-cards__card .card-title {
   display: flex;
