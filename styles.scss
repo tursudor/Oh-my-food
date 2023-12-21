@@ -9,6 +9,27 @@ $light-blue: #89c8fa;
 $dark-blue: #003a68;
 $purple: #9356dc;
 
+/* home page loading donut animation */
+.donut-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &__donut {
+    opacity: 0;
+    animation: spinning-donut 3500ms ease-in;
+  }
+  &__pan {
+    opacity: 0;
+    animation: pan 3500ms linear both;
+  }
+}
+
+header, main, footer {
+  animation: body-fading 500ms 3s backwards;
+
+}
+
 /* body */
 body {
   margin: 0px;
@@ -215,12 +236,11 @@ body {
         justify-content: space-between;
         align-items: center;
       }
-      & .heart-image {
-        object-fit: contain;
-        margin: 30px;
-        // padding: 5px;
-        width: 24px;
-        height: 24px;
+      & .heart-svg {
+        &:active {
+          background-color: red;
+          overflow: hidden;
+        }
       }
       & .card-title {
         display: flex;
@@ -267,4 +287,58 @@ body {
       margin-right: 7px;
     }
   }
+}
+
+/* testing */
+
+/* testing */
+.donut__bar {
+  animation: progress-bar 1000ms;
+}
+
+@keyframes pan {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  17% {
+    transform: translateX(15%);
+  }
+  46% {
+    transform: translateX(-10%);
+  }
+  85% {
+    transform: translateX(15%);    
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10%);
+    // opacity: 0;
+  }
+}
+
+@keyframes body-fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  } 
+}
+
+@keyframes spinning-donut {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1080deg);
+    opacity: 0;
+  } 
 }
