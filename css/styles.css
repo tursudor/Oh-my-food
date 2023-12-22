@@ -8,16 +8,10 @@
 }
 .donut-animation__donut {
   opacity: 0;
-  animation: spinning-donut 3500ms ease-in;
 }
 .donut-animation__pan {
   opacity: 0;
   filter: drop-shadow(0 -6mm 4mm red);
-  animation: pan 3500ms linear both;
-}
-
-header, main, footer {
-  animation: body-fading 500ms 3s backwards;
 }
 
 /* body */
@@ -77,20 +71,27 @@ body {
   font-weight: 300;
   color: #353535;
 }
-.explore__button {
+.explore__button-wrapper {
   text-decoration: none;
   width: 218px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 25px;
   background: linear-gradient(0deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  transition: all 400ms;
+  transform: translateY(0%) scale(100%);
 }
-.explore__button button {
+.explore__button-wrapper:hover {
+  transform: translateY(-7%) scale(105%);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.explore__button {
+  cursor: pointer;
   background: none;
   border: none;
   color: #fff;
@@ -279,8 +280,9 @@ body {
 /* animations keyframes */
 @keyframes pan {
   0% {
-    transform: scaleX(0);
     opacity: 1;
+    transform: scaleX(0);
+    filter: none;
   }
   17% {
     transform: translateX(15%);
@@ -296,6 +298,7 @@ body {
   }
   100% {
     transform: translateX(-10%);
+    opacity: 0;
   }
 }
 @keyframes body-fading {
