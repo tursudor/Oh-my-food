@@ -11,9 +11,9 @@ $purple: #9356dc;
 
 /* home page loading donut animation */
 .donut-animation {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
   transform: translate(-50%, -50%);
   &__donut {
     opacity: 0;
@@ -21,6 +21,7 @@ $purple: #9356dc;
   }
   &__pan {
     opacity: 0;
+    filter: drop-shadow(0 -6mm 4mm red);
     animation: pan 3500ms linear both;
   }
 }
@@ -289,13 +290,8 @@ body {
   }
 }
 
-/* testing */
 
-/* testing */
-.donut__bar {
-  animation: progress-bar 1000ms;
-}
-
+/* animations keyframes */
 @keyframes pan {
   0% {
     transform: scaleX(0);
@@ -331,7 +327,7 @@ body {
 
 @keyframes spinning-donut {
   0% {
-    transform: rotate(0);
+    transform: rotate(0) scale(0.9);
     opacity: 1;
   }
   99% {
