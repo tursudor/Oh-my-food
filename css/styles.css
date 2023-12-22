@@ -14,6 +14,14 @@
   filter: drop-shadow(0 -6mm 4mm red);
 }
 
+.card {
+  transition: all 400ms;
+}
+.card:hover {
+  transform: translateY(-2%) translatex(-2%) scale(105%);
+  box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* body */
 body {
   margin: 0px;
@@ -117,6 +125,9 @@ body {
   flex-direction: column;
   gap: 25px;
   align-items: center;
+}
+.how-it-works-cards__card {
+  border-radius: 20px;
 }
 .how-it-works-cards__card .card-bullet {
   position: absolute;
