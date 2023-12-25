@@ -11,6 +11,7 @@ $purple: #9356dc;
 
 /* home page loading donut animation */
 .donut-animation {
+  z-index: -1;
   position: fixed;
   left: 50vw;
   top: 50vh;
@@ -26,15 +27,16 @@ $purple: #9356dc;
   }
 }
 
-header, main, footer {
+header,
+main,
+footer {
   // animation: body-fading 500ms 3s backwards;
-
 }
 
 .card {
   transition: all 400ms;
   &:hover {
-    transform: translateY(-2%) translatex(-2%) scale(105%);
+    transform: translateY(-3px) translatex(-3px) scale(101%);
     box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.25);
   }
 }
@@ -142,6 +144,7 @@ body {
     gap: 25px;
     align-items: center;
     &__card {
+      cursor: not-allowed;
       border-radius: 20px;
       & .card-bullet {
         position: absolute;
@@ -251,11 +254,40 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &__heart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+        }
       }
       & .heart-svg {
+        // pointer-events: none;
+        display: block;
+        z-index: 3;
         &:active {
-          background-color: red;
-          overflow: hidden;
+          opacity: 0;
+          & ~ div{
+            opacity: 1;
+            transform: translateY(-24px);
+            transition: transform 400ms ease-out;
+          }
+          & ~ svg{
+            opacity: 1;
+          }
+        }
+        &--purple {
+          display: block;
+          position: absolute;
+          opacity: 0;
+        }
+        &--cover {
+          position: absolute;
+          height: 24px;
+          width: 24px;
+          background-color: $white;
+          opacity: 0;
+          // transform: translateY(-10px);
         }
       }
       & .card-title {
@@ -305,7 +337,6 @@ body {
   }
 }
 
-
 /* animations keyframes */
 @keyframes pan {
   0% {
@@ -315,13 +346,12 @@ body {
   }
   17% {
     transform: translateX(15%);
-
   }
   46% {
     transform: translateX(-10%);
   }
   85% {
-    transform: translateX(15%);    
+    transform: translateX(15%);
   }
   99% {
     opacity: 1;
@@ -338,8 +368,7 @@ body {
   }
   100% {
     opacity: 1;
-
-  } 
+  }
 }
 
 @keyframes spinning-donut {
@@ -353,5 +382,5 @@ body {
   100% {
     transform: rotate(1080deg);
     opacity: 0;
-  } 
+  }
 }

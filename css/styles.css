@@ -1,6 +1,7 @@
 /* variables */
 /* home page loading donut animation */
 .donut-animation {
+  z-index: -1;
   position: fixed;
   left: 50vw;
   top: 50vh;
@@ -18,7 +19,7 @@
   transition: all 400ms;
 }
 .card:hover {
-  transform: translateY(-2%) translatex(-2%) scale(105%);
+  transform: translateY(-3px) translatex(-3px) scale(101%);
   box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -127,6 +128,7 @@ body {
   align-items: center;
 }
 .how-it-works-cards__card {
+  cursor: not-allowed;
   border-radius: 20px;
 }
 .how-it-works-cards__card .card-bullet {
@@ -240,9 +242,38 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.restaurants-cards__card .card-content__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.restaurants-cards__card .heart-svg {
+  display: block;
+  z-index: 3;
+}
 .restaurants-cards__card .heart-svg:active {
-  background-color: red;
-  overflow: hidden;
+  opacity: 0;
+}
+.restaurants-cards__card .heart-svg:active ~ div {
+  opacity: 1;
+  transform: translateY(-24px);
+  transition: transform 400ms ease-out;
+}
+.restaurants-cards__card .heart-svg:active ~ svg {
+  opacity: 1;
+}
+.restaurants-cards__card .heart-svg--purple {
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+.restaurants-cards__card .heart-svg--cover {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  opacity: 0;
 }
 .restaurants-cards__card .card-title {
   display: flex;
