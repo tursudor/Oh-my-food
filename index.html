@@ -159,23 +159,32 @@
               <h3>Kitchen West</h3>
               <p>Angel</p>
             </div>
-            <div class="card-content__heart" onclick="return false">
-              <svg class="heart-svg" onclick="return false" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
-              <svg class="heart-svg--purple" xmlns="http://www.w3.org/2000/svg" width="22" height="21"
-                viewBox="0 0 22 21" fill="none">
-                <path
-                  d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
-                  fill="url(#paint0_linear_63709_507)" />
+            <div type="checkbox" class="card-content__heart">
+              <svg height="0" width="0">
                 <defs>
-                  <linearGradient id="paint0_linear_63709_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9356DC" />
-                    <stop offset="1" stop-color="#FF79DA" />
-                  </linearGradient>
+                  <clipPath id=svgClip clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
+                    <path d='M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z'>
+                  </clipPath>
                 </defs>
               </svg>
-              <div class="heart-svg--cover">
-                
+              <div class="heart-container">
+                <svg viewBox="0 0 100 100" class='heart-stroke'>
+                  <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+                </svg>
+
+                <input type='checkbox' class='heart-clip'>
+                <div class="fill">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 400 400" xml:space="preserve">
+                    <defs>
+                      <linearGradient id="paint0_linear_63814_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9356DC"/>
+                      <stop offset="1" stop-color="#FF79DA"/>
+                      </linearGradient>
+                      </defs>
+                    <path d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" class="waveShape" fill="url(#paint0_linear_63814_507)"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -190,20 +199,34 @@
               <h3>Elderflower</h3>
               <p>Old Street</p>
             </div>
-            <svg fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-471.7 -471.7 1415.10 1415.10" xml:space="preserve"
-              stroke="#000000" stroke-width="0.004717010000000001">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                stroke-width="21.698246000000005"></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <path
-                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
-                  </path>
-                </g>
-              </g>
-            </svg>
+            <div type="checkbox" class="card-content__heart">
+              <svg height="0" width="0">
+                <defs>
+                  <clipPath id=svgClip clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
+                    <path d='M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z'>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="heart-container">
+                <svg viewBox="0 0 100 100" class='heart-stroke'>
+                  <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+                </svg>
+
+                <input type='checkbox' class='heart-clip'>
+                <div class="fill">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 400 400" xml:space="preserve">
+                    <defs>
+                      <linearGradient id="paint0_linear_63814_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9356DC"/>
+                      <stop offset="1" stop-color="#FF79DA"/>
+                      </linearGradient>
+                      </defs>
+                    <path d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" class="waveShape" fill="url(#paint0_linear_63814_507)"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </a>
         <a href="/shoreditch.html" class="card restaurants-cards__card">
@@ -215,20 +238,34 @@
               <h3>Shoreditch Canteen</h3>
               <p>Shoreditch</p>
             </div>
-            <svg fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-471.7 -471.7 1415.10 1415.10" xml:space="preserve"
-              stroke="#000000" stroke-width="0.004717010000000001">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                stroke-width="21.698246000000005"></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <path
-                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
-                  </path>
-                </g>
-              </g>
-            </svg>
+            <div type="checkbox" class="card-content__heart">
+              <svg height="0" width="0">
+                <defs>
+                  <clipPath id=svgClip clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
+                    <path d='M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z'>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="heart-container">
+                <svg viewBox="0 0 100 100" class='heart-stroke'>
+                  <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+                </svg>
+
+                <input type='checkbox' class='heart-clip'>
+                <div class="fill">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 400 400" xml:space="preserve">
+                    <defs>
+                      <linearGradient id="paint0_linear_63814_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9356DC"/>
+                      <stop offset="1" stop-color="#FF79DA"/>
+                      </linearGradient>
+                      </defs>
+                    <path d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" class="waveShape" fill="url(#paint0_linear_63814_507)"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </a>
         <a href="/theBayLeaf.html" class="card restaurants-cards__card">
@@ -240,21 +277,34 @@
               <h3>The Bay Leaf</h3>
               <p>Hoxton</p>
             </div>
-            <svg class="disabled-heart" disabled fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="-471.7 -471.7 1415.10 1415.10" xml:space="preserve" stroke="#000000"
-              stroke-width="0.004717010000000001">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                stroke-width="21.698246000000005"></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <path
-                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
-                  </path>
-                </g>
-              </g>
-            </svg>
+            <div type="checkbox" class="card-content__heart">
+              <svg height="0" width="0">
+                <defs>
+                  <clipPath id=svgClip clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
+                    <path d='M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z'>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="heart-container">
+                <svg viewBox="0 0 100 100" class='heart-stroke'>
+                  <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+                </svg>
+
+                <input type='checkbox' class='heart-clip'>
+                <div class="fill">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 400 400" xml:space="preserve">
+                    <defs>
+                      <linearGradient id="paint0_linear_63814_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9356DC"/>
+                      <stop offset="1" stop-color="#FF79DA"/>
+                      </linearGradient>
+                      </defs>
+                    <path d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" class="waveShape" fill="url(#paint0_linear_63814_507)"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </a>
       </div>
