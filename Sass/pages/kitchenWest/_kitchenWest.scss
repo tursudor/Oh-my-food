@@ -1,0 +1,35 @@
+/* body container */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+/* header */
+
+/* banner */
+.banner {
+  display: flex;
+  &__image {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* menu */
+.menu {
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px;
+  }
+}
