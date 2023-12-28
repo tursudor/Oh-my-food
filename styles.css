@@ -623,6 +623,7 @@ footer {
 }
 
 /* header */
+/* main */
 /* banner */
 .banner {
   display: flex;
@@ -641,12 +642,81 @@ footer {
   border-top-right-radius: 25px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1055px;
+  align-self: center;
 }
 .menu__title {
-  font-family: Shrikhand, sans-serif;
   display: flex;
   justify-content: space-between;
   margin: 15px 20px;
+  width: 330px;
+  align-self: center;
+}
+.menu__title h1 {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+.menu .courses-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.menu__course {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 40px;
+}
+.menu__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+.menu__subtitle::after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background: #99e2d0;
+  margin-top: 7px;
+}
+.menu .option {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
+  font-family: Roboto, sans-serif;
+  padding: 15px;
+}
+.menu .option__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu .option__text h4 {
+  margin: 0;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu .option__text p {
+  margin: 0;
+  text-overflow: ellipsis;
+}
+.menu .option__price {
+  font-weight: 800;
+  margin: 25px 0 0;
+  align-self: center;
+}
+.menu__button {
+  align-self: center;
+  margin: 0 0 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

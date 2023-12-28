@@ -8,6 +8,14 @@
 
 /* header */
 
+
+
+/* main */
+// main {
+//   display: flex;
+//   align-items: center;
+// }
+
 /* banner */
 .banner {
   display: flex;
@@ -26,10 +34,81 @@
   border-top-right-radius: 25px;
   display: flex;
   flex-direction: column;
+  // align-items: center;
+  width: 100%;
+  max-width: 1055px;
+  align-self: center;
   &__title {
-    font-family: Shrikhand, sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 15px 20px;
+    // max-width: 100%;
+    width: 330px;
+    align-self: center;
+    & h1 {
+      font-family: Shrikhand, sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+    }
+  }
+  & .courses-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  &__course {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 40px;
+  }
+  &__subtitle {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    &::after {
+      content: "";
+      height: 3px;
+      width: 40px;
+      background: #99e2d0;
+      margin-top: 7px;
+    }
+  }
+  .option {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
+    font-family: Roboto, sans-serif;
+    padding: 15px;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      & h4 {
+        margin: 0;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      & p {
+        margin: 0;
+        text-overflow: ellipsis;
+      }
+    }
+    &__price {
+      font-weight: 800;
+      margin: 25px 0 0;
+      align-self: center;
+    }
+  }
+  &__button {
+    align-self: center;
+    margin: 0 0 20px;
   }
 }
