@@ -195,12 +195,6 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  transition: all 400ms;
-  transform: translateY(0%) scale(100%);
-}
-.explore__button-wrapper:hover {
-  transform: translateY(-7%) scale(105%);
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .explore__button {
   cursor: pointer;
@@ -746,6 +740,32 @@ footer {
 .menu__button {
   align-self: center;
   margin: 0 0 20px;
+  cursor: pointer;
+  width: 190px;
+  opacity: 1;
+  animation: purple-button-out 500ms both;
+}
+.menu__button:hover {
+  animation: purple-button-in 500ms both;
+}
+
+@keyframes purple-button-in {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes purple-button-out {
+  from {
+    opacity: 0.8;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
