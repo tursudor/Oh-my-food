@@ -7,19 +7,33 @@
 }
 
 /* header */
+.header-container {
+  // padding-bottom: 40px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 20px 1px #000;
+  animation: header-effect 400ms;
+  z-index: 3;
+  width: 100%;
+}
+
 .restaurant-header-section__heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 5px 10px 5px #000;
   & h1 {
     margin-right: auto;
     font-family: Shrikhand, sans-serif;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
 .return-svg {
   margin-right: auto;
+  margin-left: 20px;
 }
 
 /* main */
@@ -29,11 +43,15 @@
 //   background-color: orange;
 // }
 
+.main-container {
+  animation: main-effect 1s;
+}
+
 /* banner */
 .banner {
   display: flex;
   &__image {
-    height: 275px;
+    height: 355px;
     width: 100%;
     object-fit: cover;
   }
@@ -163,6 +181,24 @@
   from {
     opacity: 0.8;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes header-effect {
+  from {
+    padding-bottom: 40px;
+  }
+  to {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes main-effect {
+  from {
+    opacity: 0.4;
   }
   to {
     opacity: 1;
