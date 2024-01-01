@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Oh my food</title>
+  <title>Kitchen West</title>
   <meta charset="UTF-8">
   <link href="./styles.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +15,211 @@
 </head>
 
 <body>
-  <div class="body-container">
+  <div class="restaurant-body-container">
     <header>
       <section class="header-section">
-        <div class="header-section__heading">
+        <div class="restaurant-header-section__heading">
+          <a href="/index.html" class="return-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path
+                d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z"
+                fill="#353535" />
+            </svg>
+          </a>
           <h1>ohmyfood</h1>
-        </div>
-        <div class="location">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
-            <path
-              d="M5.88337 15.6772C1.34281 9.09472 0.5 8.41915 0.5 6C0.5 2.68628 3.18628 0 6.5 0C9.81372 0 12.5 2.68628 12.5 6C12.5 8.41915 11.6572 9.09472 7.11662 15.6772C6.81865 16.1076 6.18131 16.1076 5.88337 15.6772ZM6.5 8.5C7.88072 8.5 9 7.38072 9 6C9 4.61928 7.88072 3.5 6.5 3.5C5.11928 3.5 4 4.61928 4 6C4 7.38072 5.11928 8.5 6.5 8.5Z"
-              fill="#353535" />
-          </svg>
-          <h3>Islington, London</h3>
         </div>
       </section>
     </header>
     <main>
-      <div class="banner-container">
-
+      <div class="banner">
+        <img class="banner__image" src="./assets/home-page-images/b1f7c04ec47d0d54b023bb91b05e07d8.jpeg"
+          alt="picture with food">
       </div>
-      <div class="menu-container">
+      <div class="menu">
+        <section class="menu__title">
+          <h1>Kitchen West</h1>
+          <div class="card-content__heart">
+            <svg height="0" width="0">
+              <defs>
+                <clipPath id=svgClip clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
+                  <path d='M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z' />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="heart-container">
+              <svg viewBox="0 0 100 100" class='heart-stroke'>
+                <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+              </svg>
 
+              <input type='checkbox' class='heart-clip'>
+              <div class="fill">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 400 400" xml:space="preserve">
+                  <defs>
+                    <linearGradient id="paint0_linear_63814_507" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset stop-color="#9356DC" />
+                      <stop offset="1" stop-color="#FF79DA" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" class="waveShape"
+                    fill="url(#paint0_linear_63814_507)"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="courses-wrapper">
+          <section class="menu__course">
+            <h3 class="menu__subtitle">STARTERS</h3>
+            <div class="option">
+              <div class="option__text">
+                <h4>Smoked salmon</h4>
+                <p>With beetroot and horseadish dressing</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Ham hock terrine</h4>
+                <p>With piccalilli</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Poached egg</h4>
+                <p>With asparagus and hollandaise</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+          </section>
+          <section class="menu__course">
+            <h3 class="menu__subtitle">MAINS</h3>
+            <div class="option">
+              <div class="option__text">
+                <h4>Beef fillet with herb butter</h4>
+                <p>Served with a vegetable medley</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Brised oxtail cottage pie</h4>
+                <p>With black truffle and parsnip puree</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Fillet of turbot</h4>
+                <p>With citrus dressing</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+          </section>
+          <section class="menu__course">
+            <h3 class="menu__subtitle">DESSERTS</h3>
+            <div class="option">
+              <div class="option__text">
+                <h4>Treacle tart</h4>
+                <p>With Cornish clotted cream</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Lemon posset</h4>
+                <p>With shortbread biscuit</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+            <div class="option">
+              <div class="option__text">
+                <h4>Chocolate mousse</h4>
+                <p>With a hint of chili and a hazelnut tuile</p>
+              </div>
+              <div class="option__checkbox-wrapper">
+                <p class="option__price">£25</p>
+                <svg class="option__checkbox" xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+                  <path d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0" />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white" />
+                </svg>
+              </div>            </div>
+          </section>
+        </div>
+        <div class="card explore__button-wrapper menu__button">
+          <button class="explore__button">Order</button>
+        </div>
       </div>
     </main>
     <footer>

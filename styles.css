@@ -614,5 +614,138 @@ footer {
     transform: translate(0px, 0px);
   }
 }
+/* body container */
+.restaurant-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+/* header */
+.restaurant-header-section__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 5px 10px 5px #000;
+}
+.restaurant-header-section__heading h1 {
+  margin-right: auto;
+  font-family: Shrikhand, sans-serif;
+}
+
+.return-svg {
+  margin-right: auto;
+}
+
+/* main */
+/* banner */
+.banner {
+  display: flex;
+}
+.banner__image {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* menu */
+.menu {
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1055px;
+  align-self: center;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+  width: 330px;
+  align-self: center;
+}
+.menu__title h1 {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+.menu .courses-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  width: 90%;
+  max-width: 634px;
+  align-self: center;
+}
+.menu__course {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 40px;
+}
+.menu__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+.menu__subtitle::after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background: #99e2d0;
+  margin-top: 7px;
+}
+.menu .option {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
+  font-family: Roboto, sans-serif;
+  overflow: hidden;
+  transition: transform 2s linear;
+}
+.menu .option:hover .option__checkbox-wrapper {
+  transform: translateX(0);
+}
+.menu .option__text {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu .option__text h4 {
+  margin: 0;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu .option__text p {
+  margin: 0;
+  text-overflow: ellipsis;
+}
+.menu .option__checkbox-wrapper {
+  transition: transform 450ms;
+  display: flex;
+  gap: 15px;
+  transform: translateX(60px);
+}
+.menu .option__price {
+  font-weight: 800;
+  margin: 25px 0 0;
+  align-self: center;
+}
+.menu__button {
+  align-self: center;
+  margin: 0 0 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */
