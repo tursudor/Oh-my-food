@@ -762,7 +762,37 @@ footer {
   box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
   font-family: Roboto, sans-serif;
   overflow: hidden;
-  transition: transform 2s linear;
+  animation: cascading 1s ease-out backwards;
+}
+.menu .option--1 {
+  animation-delay: 150ms;
+}
+.menu .option--2 {
+  animation-delay: 300ms;
+}
+.menu .option--3 {
+  animation-delay: 450ms;
+}
+.menu .option--4 {
+  animation-delay: 600ms;
+}
+.menu .option--5 {
+  animation-delay: 750ms;
+}
+.menu .option--6 {
+  animation-delay: 900ms;
+}
+.menu .option--7 {
+  animation-delay: 1050ms;
+}
+.menu .option--8 {
+  animation-delay: 1200ms;
+}
+.menu .option--9 {
+  animation-delay: 1350ms;
+}
+.menu .option:hover {
+  box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.2);
 }
 .menu .option:hover .option__checkbox-wrapper {
   transform: translateX(0);
@@ -812,6 +842,7 @@ footer {
   animation: lighting-effect 1.5s;
 }
 
+/* purple order button animation */
 @keyframes purple-button-in {
   from {
     opacity: 1;
@@ -830,6 +861,7 @@ footer {
     opacity: 1;
   }
 }
+/* sliding header effect on page load */
 @keyframes header-effect {
   from {
     padding-bottom: 40px;
@@ -838,11 +870,23 @@ footer {
     padding-bottom: 0;
   }
 }
+/* slow brightening on page load */
 @keyframes lighting-effect {
   from {
     opacity: 0.8;
   }
   to {
+    opacity: 1;
+  }
+}
+/* cascading options animation */
+@keyframes cascading {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }

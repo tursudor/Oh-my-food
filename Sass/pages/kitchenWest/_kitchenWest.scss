@@ -113,10 +113,19 @@
     box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
     font-family: Roboto, sans-serif;
     overflow: hidden;
-    transition: transform 2s linear;
-    &:hover .option__checkbox-wrapper {
+    // transition: transform 7s linear;
+    animation: cascading 1s ease-out backwards;
+    @for $i from 1 through 9 {
+      &--#{$i} {
+        animation-delay: 150ms * $i;
+      }
+    }
+    &:hover {
+      box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.2);
+      & .option__checkbox-wrapper {
       transform: translateX(0);
     }
+  }
     &__text {
       padding: 12px;
       display: flex;
@@ -164,6 +173,7 @@
   animation: lighting-effect 1.5s;
 }
 
+/* purple order button animation */
 @keyframes purple-button-in {
   from {
     opacity: 1;
@@ -184,6 +194,7 @@
   }
 }
 
+/* sliding header effect on page load */
 @keyframes header-effect {
   from {
     padding-bottom: 40px;
@@ -193,11 +204,24 @@
   }
 }
 
+/* slow brightening on page load */
 @keyframes lighting-effect {
   from {
     opacity: 0.8;
   }
   to {
+    opacity: 1;
+  }
+}
+
+/* cascading options animation */
+@keyframes cascading {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
