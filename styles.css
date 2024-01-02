@@ -278,7 +278,6 @@ main {
 }
 @media screen and (min-width: 769px) {
   .how-it-works-cards__card {
-    width: 33%;
     min-width: 0;
   }
 }
@@ -309,13 +308,19 @@ main {
 }
 @media screen and (min-width: 769px) {
   .how-it-works-cards__card {
-    width: 70%;
+    width: 33%;
   }
 }
 .how-it-works-cards__card span {
   font-size: 16px;
   font-weight: 600;
   width: 200px;
+}
+@media screen and (min-width: 769px) {
+  .how-it-works-cards__card span {
+    overflow: hidden;
+    max-width: 6rem;
+  }
 }
 
 /* Restaurants section */
@@ -896,6 +901,10 @@ footer {
     transform: translateX(0);
     opacity: 1;
   }
+}
+/* larger menu title space between heart and title */
+.menu__title {
+  width: 370px;
 }
 
 /*# sourceMappingURL=styles.css.map */
