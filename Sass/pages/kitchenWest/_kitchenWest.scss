@@ -113,7 +113,6 @@
     box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.1);
     font-family: Roboto, sans-serif;
     overflow: hidden;
-    // transition: transform 7s linear;
     animation: cascading 1s ease-out backwards;
     @for $i from 1 through 9 {
       &--#{$i} {
@@ -123,14 +122,18 @@
     &:hover {
       box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.2);
       & .option__checkbox-wrapper {
-      transform: translateX(0);
+      transform: translateX(-59px);
+        margin-left: 60px;
+      }
     }
-  }
     &__text {
       padding: 12px;
       display: flex;
       flex-direction: column;
       gap: 5px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       & h4 {
         margin: 0;
         font-size: 18px;
@@ -140,14 +143,18 @@
       }
       & p {
         margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
+       
       }
     }
     &__checkbox-wrapper {
       transition: transform 450ms;
       display: flex;
       gap: 15px;
-      transform: translateX(60px);
+      margin-right: -60px;
+      flex-shrink: 1;
     }
     &__price {
       font-weight: 800;

@@ -795,13 +795,17 @@ footer {
   box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.2);
 }
 .menu .option:hover .option__checkbox-wrapper {
-  transform: translateX(0);
+  transform: translateX(-59px);
+  margin-left: 60px;
 }
 .menu .option__text {
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .option__text h4 {
   margin: 0;
@@ -812,13 +816,16 @@ footer {
 }
 .menu .option__text p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu .option__checkbox-wrapper {
   transition: transform 450ms;
   display: flex;
   gap: 15px;
-  transform: translateX(60px);
+  margin-right: -60px;
+  flex-shrink: 1;
 }
 .menu .option__price {
   font-weight: 800;
