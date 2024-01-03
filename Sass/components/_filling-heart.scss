@@ -1,0 +1,60 @@
+/* filling heart animation */
+.heart-container {
+  position: relative;
+  width: 35px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  clip-path: url(#svgClip);
+}
+
+.heart-clip {
+  appearance: none;
+  margin: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.heart-clip + .fill {
+  top: 0;
+  left: 0;
+  transform: translateY(10%);
+  width: 350px;
+  aspect-ratio: 1/1;
+  transition: transform 750ms ease-out;
+}
+
+.heart-clip:checked + .fill {
+  transform: translateY(-1%);
+}
+
+.heart-stroke {
+  width: 31px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  fill: $white;
+  stroke: $font-grey;
+  stroke-width: 4px;
+}
+
+.waveShape {
+  animation-name: waveAction;
+  animation-timing-function: ease-in;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes waveAction {
+  0% {
+    transform: translate(-375px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
