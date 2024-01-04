@@ -168,6 +168,7 @@
     width: 190px;
     opacity: 1;
     animation: purple-button-out 500ms both;
+    border: none;
     &:hover {
       animation: purple-button-in 500ms both;
     }

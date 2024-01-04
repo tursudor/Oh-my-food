@@ -1,15 +1,13 @@
 /* body */
 body {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   margin: 0px;
   background-color: $light-grey;
 }
 
 /* header */
 .header-section {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: center;
   &__heading {
     display: flex;
@@ -35,7 +33,7 @@ body {
     padding: 15px;
     z-index: -1;
     & h3 {
-      font-family: Roboto;
+      font-family: $main-font;
       margin: 0px;
     }
   }
@@ -43,22 +41,19 @@ body {
 
 /* main */
 main {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 /* footer */
 footer {
   background-color: $font-grey;
-
 }
 
 .footer-info {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: center;
   color: $white;
-  font-family: Roboto, sans-serif;
+  font-family: $main-font;
   padding: 22px 25px;
   @media screen and (min-width: 992px) {
     flex-direction: row-reverse;
@@ -77,8 +72,7 @@ footer {
     }
   }
   &__links {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: space-between;
     gap: 7px;
     @media screen and (min-width: 992px) {
