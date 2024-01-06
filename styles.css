@@ -353,6 +353,10 @@ footer {
     width: 45%;
   }
 }
+.restaurants__card:hover + .heart-container {
+  transform: translate(0.7px, -0.5px) scale(1.02);
+  transition: transform 200ms ease;
+}
 .restaurants__card:visited {
   color: #000;
 }
@@ -400,10 +404,10 @@ footer {
   gap: 3px;
   align-self: flex-start;
 }
-.restaurants__card .card-title h3 {
+.restaurants__card h3 {
   margin: 0px;
 }
-.restaurants__card p {
+.restaurants p {
   margin: 0px;
 }
 
@@ -418,6 +422,26 @@ footer {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
 }
+.absolute-positioning {
+  position: absolute;
+  margin-right: -75vw;
+  margin-bottom: 25px;
+  margin-top: -80px;
+}
+@media screen and (min-width: 769px) {
+  .absolute-positioning {
+    margin-right: -65vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .absolute-positioning {
+    margin-right: auto;
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 200px;
+  }
+}
+
 /* body container */
 .restaurant-body-container {
   display: flex;
