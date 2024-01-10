@@ -1,0 +1,13 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "## **Book the meal and enjoy it at the restaurant**",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w Sass/main.scss styles.css",
+    "prefix": "postcss ./styles.css --use autoprefixer -d ./prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
