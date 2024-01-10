@@ -4,7 +4,7 @@ footer {
   // animation: body-fading 500ms 3s backwards;
 }
 
-/* header */
+/************ header *************/
 .home-header-container {
   position: absolute;
   width: 100%;
@@ -25,12 +25,12 @@ footer {
   }
 }
 
-/* main */
+/************* main *************/
 .home-main-container {
   margin-top: 140px;
 }
 
-/* explore section */
+/************* explore section *************/
 .explore {
   @include flex-column;
   align-items: center;
@@ -55,7 +55,7 @@ footer {
   }
 }
 
-/* How-it-works section */
+/************* How-it-works section *************/
 .how-it-works-container {
   background-color: $white;
   margin: 0;
@@ -78,7 +78,6 @@ footer {
   }
   @media screen and (min-width: 992px) {
     width: 100%;
-  
   }
   & h2 {
     margin: 50px 190px 30px 0px;
@@ -97,15 +96,7 @@ footer {
     gap: 25px;
     align-items: center;
     @media screen and (min-width: 769px) {
-      // flex-direction: row;
       width: 75%;
-      // max-width: 100vw;
-      // min-width: 70%;
-      // max-width: 1100px;
-      // gap: 20px;
-      // flex-shrink: 4;
-      // align-items: center;
-      // justify-content: center;
     }
     @media screen and (min-width: 992px) {
       flex-direction: row;
@@ -117,17 +108,11 @@ footer {
   &__card {
     display: flex;
     cursor: not-allowed;
-    // width: 100%;
     @media screen and (min-width: 769px) {
-      // min-width: 0;
       width: 100%;
-      // flex-shrink: 4;
-      // align-self: flex-start;
-      // justify-content: center;
     }
     @media screen and (min-width: 992px) {
       width: 33%;
-      // gap: 20px;
       min-width: 0;
     }
   }
@@ -154,10 +139,9 @@ footer {
     width: 287px;
     height: 72.379px;
     margin-left: 10px;
-    // box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
     @media screen and (min-width: 769px) {
-    width: 100%;
-    justify-content: center;
+      width: 100%;
+      justify-content: center;
     }
   }
   & span {
@@ -171,7 +155,7 @@ footer {
   }
 }
 
-/* Restaurants section */
+/************* Restaurants section *************/
 .restaurants-container {
   @include flex-column;
   justify-content: center;
@@ -210,6 +194,13 @@ footer {
       flex-wrap: wrap;
       justify-content: space-between;
       row-gap: 45px;
+    }
+    &.card-heart {
+      /* heart icon animation wrapper */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
     }
   }
   &__card {
@@ -259,12 +250,6 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &__heart {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-      }
     }
     & .card-title {
       @include flex-column;
@@ -273,30 +258,18 @@ footer {
       margin: 15px;
       gap: 3px;
       align-self: flex-start;
-      }
-      & h3 {
-        margin: 0px;
-      }
+      color: $black;
     }
-    & p {
+    & h3 {
       margin: 0px;
     }
   }
-  // & .heart-checkbox {
-  //   display: none;
-  // }
-  // & .heart-wrapper {
-  //   z-index: 9;
-  // }
-  // & .absolute-heart {
-  //   background-color: orange;
-  //   position: absolute;
-  //   margin-top: 200px;
-  //   margin-right: -72vw;
-  // }
+  & p {
+    margin: 0px;
+  }
+}
 
-
-/* home header-animation */
+/************* home header-animation *************/
 @keyframes home-page-header-animation {
   from {
     opacity: 1;
@@ -315,13 +288,11 @@ footer {
   margin-top: -80px;
   @media screen and (min-width: 769px) {
     margin-right: -65vw;
-    
   }
   @media screen and (min-width: 992px) {
     margin-right: auto;
     position: absolute;
     margin-left: -70px;
     margin-top: 200px;
-    // z-index: 9;
   }
 }

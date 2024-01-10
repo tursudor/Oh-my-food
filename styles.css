@@ -1,6 +1,7 @@
 /* color variables */
 /* font variable */
-/* flexbox direction-column */ /* body */
+/* flexbox direction-column */
+/* body */
 body {
   display: flex;
   flex-direction: column;
@@ -105,7 +106,7 @@ footer {
   color: inherit;
 }
 
-/* header */
+/************ header *************/
 .home-header-container {
   position: absolute;
   width: 100%;
@@ -126,12 +127,12 @@ footer {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* main */
+/************* main *************/
 .home-main-container {
   margin-top: 140px;
 }
 
-/* explore section */
+/************* explore section *************/
 .explore {
   display: flex;
   flex-direction: column;
@@ -161,7 +162,7 @@ footer {
   color: #353535;
 }
 
-/* How-it-works section */
+/************* How-it-works section *************/
 .how-it-works-container {
   background-color: #fff;
   margin: 0;
@@ -284,7 +285,7 @@ footer {
   }
 }
 
-/* Restaurants section */
+/************* Restaurants section *************/
 .restaurants-container {
   display: flex;
   flex-direction: column;
@@ -336,6 +337,13 @@ footer {
     justify-content: space-between;
     row-gap: 45px;
   }
+}
+.restaurants-cards.card-heart {
+  /* heart icon animation wrapper */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 .restaurants__card {
   display: flex;
@@ -389,12 +397,6 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.restaurants__card .card-content__heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
 .restaurants__card .card-title {
   display: flex;
   flex-direction: column;
@@ -403,6 +405,7 @@ footer {
   margin: 15px;
   gap: 3px;
   align-self: flex-start;
+  color: #000;
 }
 .restaurants__card h3 {
   margin: 0px;
@@ -411,7 +414,7 @@ footer {
   margin: 0px;
 }
 
-/* home header-animation */
+/************* home header-animation *************/
 @keyframes home-page-header-animation {
   from {
     opacity: 1;

@@ -16,6 +16,7 @@
 
 <body>
   <div class="body-container">
+    <!-- donut home-page loader animation -->
     <div class="donut-animation">
       <svg class="donut-animation__donut icon" xmlns="http://www.w3.org/2000/svg" width="72px" height="72px"
         viewBox="0 0 1024 1024" version="1.1">
@@ -71,6 +72,7 @@
         </g>
       </svg>
     </div>
+    <!-- header section starting here -->
     <header class="home-header-container header-section">
       <div class="home-header-container__heading header-section__heading">
         <h1>ohmyfood</h1>
@@ -84,7 +86,9 @@
         <h3>Islington, London</h3>
       </div>
     </header>
+    <!-- main section starting here -->
     <main class="home-main-container">
+      <!-- explore section -->
       <section class="explore">
         <h2>Book the meal you want</h2>
         <p>Discover our carefully selected high-end restaurants</p>
@@ -92,6 +96,7 @@
           Explore our restaurants
         </a>
       </section>
+      <!-- how it works section -->
       <div class="how-it-works-container">
         <section class="how-it-works">
           <h2>How it works</h2>
@@ -147,10 +152,12 @@
           </div>
         </section>
       </div>
+      <!-- restaurant section starting here -->
       <div class="restaurants-container">
         <section id="restaurants-id" class="restaurants">
           <h2>Restaurants</h2>
           <div class="restaurants-cards">
+            <!-- first card -->
             <a href="/kitchenWest.html" class="card restaurants__card">
               <div class="card-image">
                 <img src="assets/home-page-images/b1f7c04ec47d0d54b023bb91b05e07d8.jpeg" alt="image with food on table">
@@ -163,7 +170,7 @@
                 </div>
               </div>
             </a>
-            <div class="heart-container absolute-positioning card-content__heart">
+            <div class="heart-container absolute-positioning card-heart">
               <svg viewBox="0 0 100 100" class='heart-stroke'>
                 <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
               </svg>
@@ -183,6 +190,7 @@
                 </svg>
               </div>
             </div>
+            <!-- second card -->
             <a href="/elderflower.html" class="card restaurants__card">
               <div class="card-image">
                 <img src="assets/home-page-images/6d117fe627d64bfc6ce70a2b3d8932d0.jpeg" alt="image with food on table">
@@ -195,7 +203,7 @@
                 </div>
               </div>
             </a>
-            <div class="heart-container absolute-positioning card-content__heart">
+            <div class="heart-container absolute-positioning card-heart">
               <svg viewBox="0 0 100 100" class='heart-stroke'>
                 <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
               </svg>
@@ -215,6 +223,7 @@
                 </svg>
               </div>
             </div>
+            <!-- third card -->
             <a href="/shoreditch.html" class="card restaurants__card">
               <div class="card-image">
                 <img src="assets/home-page-images/403bf1f2e68f215ddea32f9d8e8176fb.jpeg" alt="image with food on table">
@@ -226,7 +235,7 @@
                 </div>
               </div>
             </a>
-            <div class="heart-container absolute-positioning card-content__heart">
+            <div class="heart-container absolute-positioning card-heart">
               <svg viewBox="0 0 100 100" class='heart-stroke'>
                 <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
               </svg>
@@ -246,6 +255,7 @@
                 </svg>
               </div>
             </div>
+            <!-- forth card -->
             <a href="/theBayLeaf.html" class="card restaurants__card">
               <div class="card-image">
                 <img src="assets/home-page-images/845d798f666fdecd06f773ce96dfd261.jpeg" alt="image with food on table">
@@ -257,7 +267,7 @@
                 </div>
               </div>
             </a>
-            <div class="heart-container absolute-positioning card-content__heart">
+            <div class="heart-container absolute-positioning card-heart">
               <svg viewBox="0 0 100 100" class='heart-stroke'>
                 <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
               </svg>
@@ -281,6 +291,7 @@
         </section>
       </div>
     </main>
+    <!-- footer section starts here -->
     <footer>
       <section class="footer-info">
         <h3>ohmyfood</h3>
@@ -307,7 +318,7 @@
       </section>
     </footer>
   </div>
-  <!-- heart animation clip path -->
+  <!-- heart animation clip path used for heart icons in restaurants cards -->
   <svg class="heart-animation-clip-path" height="0" width="0">
     <defs>
       <clipPath id="svgClip" clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)">
