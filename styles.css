@@ -1,7 +1,6 @@
 /* color variables */
 /* font variable */
-/* flexbox direction-column */
-/* body */
+/* flexbox direction-column */ /* body */
 body {
   display: flex;
   flex-direction: column;
@@ -104,6 +103,12 @@ footer {
 .footer-info a {
   text-decoration: none;
   color: inherit;
+}
+
+header,
+main,
+footer {
+  animation: body-fading 500ms 3s backwards;
 }
 
 /************ header *************/
@@ -706,10 +711,12 @@ footer {
 }
 .donut-animation__donut {
   opacity: 0;
+  animation: spinning-donut 3100ms ease-in;
 }
 .donut-animation__pan {
   opacity: 0;
   filter: drop-shadow(0 -6mm 4mm red);
+  animation: pan 3100ms linear both;
 }
 
 /* animation keyframes */
