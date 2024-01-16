@@ -366,10 +366,6 @@ footer {
     width: 45%;
   }
 }
-.restaurants__card:hover + .heart-container {
-  transform: translate(0.7px, -0.5px) scale(1.02);
-  transition: transform 200ms ease;
-}
 .restaurants__card:visited {
   color: #000;
 }
@@ -830,12 +826,7 @@ footer {
   transition: all 400ms;
 }
 .card:hover {
-  transform: translateY(-2px) translatex(-2px) scale(1.02);
-  box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
-.card:active {
-  transform: scale(1);
-  box-shadow: 10px 4px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* purple button styling */
