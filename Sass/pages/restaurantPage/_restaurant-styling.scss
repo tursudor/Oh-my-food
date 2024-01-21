@@ -127,6 +127,9 @@
       transform: translateX(-59px);
         margin-left: 60px;
       }
+      & .option__checkbox i {
+        animation: checkbox-rotate 1s;
+      }
     }
     &__text {
       padding: 12px;
@@ -161,6 +164,21 @@
       font-weight: 800;
       margin: 25px 0 0;
       align-self: center;
+    }
+    &__checkbox {
+      background-color: #99e2d0;
+      height: 70px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -1px;
+      & i {
+        background-color: #99e2d0;
+        color: white;
+        // border-radius: 50px;
+        font-size: 20px;
+      }
     }
   }
   &__button {
@@ -232,5 +250,15 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+/* rotating checkbox animation */
+@keyframes checkbox-rotate {
+  0% {
+    transform: rotate();
+  }
+  100% {
+    transform: rotate(1turn);
   }
 }
