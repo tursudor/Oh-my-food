@@ -448,15 +448,6 @@ footer {
   }
 }
 
-/* delay display to prevent click cards on page laod */
-@keyframes home-display-delay {
-  0% {
-    display: none;
-  }
-  100% {
-    display: block;
-  }
-}
 /* body container */
 .restaurant-body-container {
   display: flex;
@@ -548,6 +539,8 @@ footer {
   flex-direction: column;
   gap: 12px;
   margin: 0 0 40px;
+  padding: 0;
+  list-style-type: none;
 }
 .menu__subtitle {
   display: flex;
