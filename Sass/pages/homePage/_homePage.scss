@@ -292,3 +292,13 @@ footer {
     margin-top: 200px;
   }
 }
+
+/* delay display to prevent click cards on page laod */
+@keyframes home-display-delay {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}

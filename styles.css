@@ -448,6 +448,15 @@ footer {
   }
 }
 
+/* delay display to prevent click cards on page laod */
+@keyframes home-display-delay {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
 /* body container */
 .restaurant-body-container {
   display: flex;
@@ -817,6 +826,10 @@ footer {
 @keyframes body-fading {
   0% {
     opacity: 0;
+    display: none;
+  }
+  50% {
+    display: block;
   }
   100% {
     opacity: 1;
