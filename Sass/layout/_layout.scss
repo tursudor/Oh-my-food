@@ -72,6 +72,8 @@ footer {
     }
   }
   &__links {
+    list-style: none;
+    padding: 0;
     @include flex-column;
     justify-content: space-between;
     gap: 7px;

@@ -35,23 +35,22 @@
 @keyframes pan {
   0% {
     opacity: 1;
-    transform: scaleX(0);
     filter: none;
   }
   17% {
-    transform: translateX(15%);
+    transform: translateX(20px);
   }
   46% {
-    transform: translateX(-10%);
+    transform: translateX(-20px);
   }
   85% {
-    transform: translateX(15%);
+    transform: translateX(20px);
   }
   99% {
     opacity: 1;
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-20px);
     opacity: 0;
   }
 }
